@@ -8,6 +8,7 @@
                 <name>Panuci Correios</name>
                 <specificerrmsg>Método de entrega indisponível no momento, utilize outro método ou se preferir entre em contato conosco.</specificerrmsg>
                 <limiteminimo>1</limiteminimo>
+                <carriertitulo>Correios</carriertitulo>
             </correios>
         </carriers>
     </default>

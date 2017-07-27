@@ -72,7 +72,7 @@ class Correios extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
 
             $method = $this->_rateMethodFactory->create();
             $method->setCarrier($this->_code);
-            $method->setCarrierTitle('Teste de titulo do carrier');
+            $method->setCarrierTitle($this->_helper->getConfig('carriers/correios/carriertitulo'));
 
             $method->setMethod('correios-' . $carrier['codigo']);
             $method->setMethodTitle($this->_objectManager->get('Panuci\Correios\Helper\Data')->getMethodTitle($carrier['codigo'], $carrier['prazo']));

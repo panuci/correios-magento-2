@@ -8,6 +8,10 @@
                     <label>Ativar</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
+                <field id="carriertitulo" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Título do Método de Entrega</label>
+                    <comment>Nome do método que será exibido para o cliente (Padrão: Correios)</comment>
+                </field>
                 <field id="specificerrmsg" translate="label" type="textarea" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Mensagem que será exibida em caso de erro</label>
                 </field>
@@ -26,27 +30,27 @@
                     <comment>Os valores mínimos serão assumidos. (L: 11cm, Altura: 2cm, Comprimento: 16cm)</comment>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="cdmaopropria" translate="label" type="select" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="cdmaopropria" translate="label" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Serviço Extra: Mão Própria</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="nvlvalordeclarado" translate="label" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="nvlvalordeclarado" translate="label" type="select" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Serviço Extra: Valor Declarado</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="cdavisorecebimento" translate="label" type="select" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="cdavisorecebimento" translate="label" type="select" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Serviço Extra: Aviso de Recebimento</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="prazoadcional" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="0">
+                <field id="prazoadcional" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Prazo Adicional (dias)</label>
                     <comment>Ex: 8</comment>
                 </field>
-                <field id="valoradcional" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="0">
+                <field id="valoradcional" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Valor Adicional</label>
                     <comment>Ex: 15.99</comment>
                 </field>
-                <field id="sort_order" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
+                <field id="sort_order" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="0">
                     <label>Ordem de exibição</label>
                 </field>
             </group>

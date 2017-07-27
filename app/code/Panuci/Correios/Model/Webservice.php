@@ -162,9 +162,9 @@ class Webservice extends AbstractModel
 
     private function _validarDimensoes(){
         if($this->_helper->getConfig('carriers/correios/limiteminimo')){
-            $this->_params = $this->_params['nVlComprimento'] < 16 ? $this->_params['nVlComprimento'] : 16;
-            $this->_params = $this->_params['nVlLargura'] < 11 ? $this->_params['nVlLargura'] : 11;
-            $this->_params = $this->_params['nVlAltura'] < 2 ? $this->_params['nVlAltura'] : 2;
+            $this->_params['nVlComprimento'] = $this->_params['nVlComprimento'] < 16 ? $this->_params['nVlComprimento'] : 16;
+            $this->_params['nVlLargura'] = $this->_params['nVlLargura'] < 11 ? $this->_params['nVlLargura'] : 11;
+            $this->_params['nVlAltura'] = $this->_params['nVlAltura'] < 2 ? $this->_params['nVlAltura'] : 2;
         }
     }
 }
