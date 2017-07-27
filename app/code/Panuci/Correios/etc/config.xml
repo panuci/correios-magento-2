@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <correios>
+                <active>1</active>
+                <model>Panuci\Correios\Model\Carrier\Correios</model>
+                <name>Panuci Correios</name>
+                <specificerrmsg>Método de entrega indisponível no momento, utilize outro método ou se preferir entre em contato conosco.</specificerrmsg>
+                <limiteminimo>1</limiteminimo>
+            </correios>
+        </carriers>
+    </default>
+</config>
